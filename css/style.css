@@ -1,0 +1,327 @@
+/* header{
+    width: 100%;
+    background-color: red;
+    height: 100px;
+    margin-bottom: 150px;
+}
+header>#parent{
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+#parent>#child1{
+    display: flex;
+    flex-basis: 50%;
+    background-color: blueviolet;
+    justify-content: space-around;
+    align-items: center; 
+    font-family: 'Poppins', sans-serif;
+
+}
+#parent>#child2{
+    display: flex;
+    flex-basis:10%;
+    background-color:coral;
+    justify-content: space-between;
+    align-items: center; 
+    font-family: 'Poppins', sans-serif;
+}
+
+#parent>#child2>#btn1{
+    background-color:#63B4D1;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow:  -10px 5px 70px  15px #7699D4;
+    margin-top: 30px;
+    margin-left: 35%;
+    font-family: 'Poppins', sans-serif; 
+    cursor: pointer;
+} */
+
+#parent>#child2>#btn2{
+    background-color:#63B4D1;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow:  -10px 5px 70px  15px #7699D4;
+    margin-top: 30px;
+    margin-left: 35%;
+    font-family: 'Poppins', sans-serif; 
+    cursor: pointer;
+}
+
+
+main>#child1{
+    width: 70%;
+   
+    margin:auto;     
+}
+
+
+main>#child1>#row1{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; 
+    margin-bottom: 20px;
+}
+#row1>p{
+      margin: 0px;
+}
+main>#child1{
+    margin-bottom: 20px;
+}
+main>#child1>#row2{
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; 
+    margin-bottom: 30px;
+}
+#row2>p{
+    margin:0px
+}
+
+#child1>#row3{
+    background-color:#63B4D1;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow:  -10px 5px 70px  15px #7699D4;
+    margin-top: 30px;
+    margin-left: 45%;
+    font-family: 'Poppins', sans-serif; 
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+#row4{
+    display: flex;
+    width:60%;
+    margin: auto;
+ 
+    justify-content: center;
+    column-gap: 10%;
+    padding-bottom: 20px;
+
+}
+#row4>div{
+    flex-basis: 2fr;
+  
+}
+
+@media screen and (max-width:60em) 
+{
+#child1>#row3{
+    width: 90%;
+    margin-left:5%;
+    margin-bottom: 20px;
+}
+}
+#child2{
+    background-color: darkmagenta;
+
+}
+
+#img3{
+    position: absolute;
+    bottom: -190px;
+    right: 0%;
+    width: 450px;
+}
+#img2{
+    position: absolute;
+    bottom: -180px;
+     left:0%;
+     width: 450px;
+}
+#img1{
+    position: absolute;
+    z-index: -1;
+    top: 90%;
+    left: 320px;
+    width: 70%;
+}
+@media (max-width:90.063em){
+main>#child2{
+  display: none;
+}
+}
+main>#child3{
+   background-image: url("https://static.buffer.com/marketing/static/background/jagged-border.svg");
+   width: 100%;
+   height: 300px;
+   background-repeat: no-repeat;
+   margin-top: 340px;
+   margin-bottom: 100px;
+}
+@media(max-width: 90.063em)
+{
+main>#child3{
+    margin-top:0px;
+}
+}
+main>#child3>p{
+    padding-top: 60px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 10px;
+}
+.container{
+    display:flex;
+   
+    width: 50%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.container div{
+    padding-bottom: 10px;
+    padding-top:10px;
+}
+
+/* Medium devices (landscape tablets, 768px and up)  */
+ @media screen and (max-width: 60em) { 
+     #child3{
+         background-size: cover;
+     } 
+     .container{
+        width: 30%; 
+     }
+#row1{
+flex-wrap: wrap;
+}
+} 
+
+main>#child4{
+    width: 80%;
+
+    margin: auto;
+    margin-bottom: 100px;  
+}
+#child4>p{
+    text-align: center;
+    font-size:40px;
+    margin: 0px;  
+}
+#child5{
+    width:70%;
+    
+    margin: auto;
+    display: grid;
+    column-gap: 7%;
+    grid-template:"a b";
+}
+#child5>#row1{
+  grid-area: a;
+  height: 400px;
+  background-color: violet;
+}
+#child5>#row2{
+    grid-area:b;
+    height: 400px;
+    background-color: yellow;
+}
+@media screen and (max-width:600px)
+{
+#child5{
+    grid-template: 'a'
+    'b';
+    row-gap: 5%;
+}
+#child5>#row1>h2,#child5>#row2>h2{
+    text-align: center;
+}
+
+#child5>#row1>h2+p,#child5>#row2>h2+p{
+    text-align: center;
+}
+
+}
+
+#child5>#row1>img{
+    width: 100px;
+    margin-left: 30px;
+    margin-top: -30px;
+    border-radius:5px;
+    background-color: white;
+    box-shadow:  -10px 5px 70px  15px rgb(223, 217, 217);
+    margin-bottom: 20px;
+}
+#child5>#row1>h2{
+    margin-left: 30px;
+}
+#child5>#row1>h2+p{
+   
+    margin-left: 30px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif; 
+}
+
+#child5>#row1>#btn1{
+    background-color:#63B4D1;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow:  -10px 5px 70px  15px #7699D4;
+    margin-top: 30px;
+    margin-left: 35%;
+    font-family: 'Poppins', sans-serif; 
+    cursor: pointer;
+}
+
+#child5>#row2>img{
+    width: 100px;
+    margin-left: 30px;
+    margin-top: -30px;
+    border-radius:5px;
+    background-color: white;
+    box-shadow:  -10px 5px 70px  15px rgb(223, 217, 217);
+    margin-bottom: 20px;
+}
+
+#child5>#row2>h2{
+    margin-left: 30px;
+}
+#child5>#row2>h2+p{
+
+    margin-left: 30px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif; 
+}
+#child5>#row2>#btn1{
+    background-color:#63B4D1;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow:  -10px 5px 70px  1px #7699D4;
+    margin-top: 30px;
+    margin-left: 35%;
+    cursor: pointer;
+  
+    font-family: 'Poppins', sans-serif; 
+}
+
+#child5>#row1>#btn1+p,#child5>#row2>#btn1+p{
+     text-align: center;
+     margin-top: 10px; 
+}
+
+
+
+

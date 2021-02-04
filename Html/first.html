@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="uft-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,400&family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+        <title>Social media</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="nav.css">
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+        crossorigin="anonymous"></script>
+        <script>
+        $(function() {
+        $(".toggle").on("click", function() {
+            if ($(".item").hasClass("active")) {
+                $(".item").removeClass("active");
+            } else {
+                $(".item").addClass("active");
+            }
+        });
+    });
+        </script>
+    </head>
+    <body>
+
+            <!-- <div id='parent'>
+                <div>
+                    box1
+                </div>
+                <div id="child1"> 
+                    <div class="dropdown">
+                        <button class="dropbtn">Tools</button>
+                    </div>
+                    <div>Pricing</div>
+                    <div>Resources</div>
+                    <div>About</div>
+                    <div>Customes</div>
+                </div>
+                <div id="child2">
+                    <input id="btn1" type="button" value="Get Started Now" >
+                    <input id="btn1" type="button" value="Log in" >
+                </div>
+            </div> -->
+            <nav>
+                <ul class="menu">
+                    <li class="logo" ><a href="#">Logo</a></li>
+                    <li class="item"><a  href="#">Home</a></li> 
+                    <li class="item" ><a  href="#">about</a></li> 
+                    <li  class="item"><a href="#">services</a></li>
+                     </li> 
+                    <li  class="item button"><a href="#">Login</a></li> 
+                    <li  class="item button secondary"><a href="#">Sign up</a></li>
+                    <li class="toggle"><span class="bars"></span></li> 
+               </ul>
+            </nav>
+
+       <main>
+           <div id="child1">
+               <div id="row1">
+                <p>Simpler social media tools</p> 
+                <p>for authentic engagement</p> 
+               </div>
+                <div id="row2">
+                <p>Tell your brand’s story and grow your audience with a</p> 
+                <p> publishing, analytics, and engagement platform you can trust.</p>
+              </div> 
+              <input id="row3" type="button" value="Get Started" >
+              <div id="row4">
+                  <div>No Credit card required</div>
+                  <div>14-day Free trial</div>
+                  <div>Cancel anytime</div>
+              </div>
+            </div>
+            <div id="child2">
+                <img id="img1" src="https://static.buffer.com/marketing/static/background/hero-doodle-gray.png" alt="no image">
+                <img id="img2" src="https://static.buffer.com/marketing/static/background/multiproduct-hero-left-v2@2x.png" alt="blank">
+                <img id="img3" src="https://static.buffer.com/marketing/static/background/multiproduct-hero-right@2x.png" alt="not found">
+            </div>
+            <div id="child3">
+                <p>More than 75,000+ companies trust Buffer</p>
+                <div class="container" id="row1">
+                    <div>box1</div>
+                    <div>box1</div>
+                    <div>box1</div>
+                    <div>box1</div>
+                    <div>box1</div>
+                    <div>box1</div>
+                    <div>box1</div>
+                </div>
+            </div>
+            <div id="child4">
+                <p>Social media tools built with</p>
+                <p> your small business in mind</p>
+            </div>
+            <div id="child5">
+                <div id="row1">
+                    <img src="noun_software engineer_2909346.png">
+                     <h2>Publish your content</h2>
+                     <p>Queue up thumb-stopping content across your social channels, and enjoy up-to-date Instagram tools</p>
+                     <input type="button" value="Get Started" id="btn1">
+                     <p>or <u>Learn more</u></p>
+                </div>
+                <div id="row2">
+                    <img src="noun_startup_2909309.png">
+                    <h2>Publish your content</h2>
+                    <p>Queue up thumb-stopping content across your social channels, and enjoy up-to-date Instagram tools</p>
+                    <input id="btn1" type="button" value="Get Started" >
+                    <p>or <u>Learn more</u></p>
+                </div>
+            </div>
+       </main>
+    </body>
+
+</html>
