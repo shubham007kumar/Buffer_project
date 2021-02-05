@@ -1,0 +1,125 @@
+
+        *{
+            padding:0%;
+            margin: 0%;
+            text-decoration: none;
+            list-style:none;
+
+        }
+        nav{
+            background-color: whitesmoke;
+            height: 80px;
+            position: relative;
+        }
+        nav > ul{
+            width: 80%;
+            display: flex;
+            float: right;
+        }
+       nav > ul li{
+           flex-grow: 1;
+           /* display: inline-block; */
+           margin: 10px;
+       }
+       nav button{
+           background-color: rgb(236, 27, 37);
+           padding: 4px;
+       }
+       nav a:hover{
+           font-weight: bolder;
+           color: blue;
+       }
+       nav #icon > div{
+           display: inline-block;
+           width: 30px;
+           height: 5px;
+           margin: 5px;
+           background-color: black;
+           margin-left: 90%;
+           margin-top: -17px;
+           display: none;
+
+       }
+       nav #cross {
+           width: 40px;
+           float: right;
+           margin-top: -30px;
+           margin-right: 20px;
+           visibility: hidden;
+           cursor: pointer;
+       }
+       @media screen and (min-width: 768px){
+        nav > ul{
+            width: 80%;
+            display: flex;
+            float: right;
+            
+        }
+       }
+       @media screen and (max-width: 768px){
+           nav ul{
+               visibility: hidden;
+               position: fixed;
+               background-color: blue;
+               font-size: 20px;
+               padding-left: 45%;
+               height: 100vh;
+               width: 100%;
+               flex-direction: column;
+            
+           }
+           nav a{
+               color: yellow;
+           }
+           nav a:hover{
+               font-size: 22spx;
+               font-weight: bold;
+               color: white;
+           }
+          
+           nav #icon > div{
+              cursor: pointer;
+               
+               display: block;
+           }
+           nav{
+               position: relative;
+           }
+           li > div{
+           display: flex;
+           background-color: whitesmoke;
+           margin-top: 20px;
+           }
+           nav #cross {
+           width: 40px;
+           float: right;
+           margin-top: -30px;
+           margin-right: 20px;
+           visibility: hidden;
+           cursor: pointer;
+       }
+       
+     
+       /* .dispalyList{
+           visibility: visible;
+            /* position: fixed;
+            background-color: blue;
+            padding-left: 25%;
+            height: 100vh;
+            width: 100%;
+            flex-direction: column; */
+         
+        }
+        */
+        /* nav #icon >div:nth-of-type(1){
+            transform:  rotate(60deg);
+        }
+        nav #icon> div:nth-of-type(3){
+            transform:rotate(-60deg);
+        }
+        nav #icon >div:nth-of-type(2){
+         transform:rotate(60deg);
+        } */
+ 
+ 
+     

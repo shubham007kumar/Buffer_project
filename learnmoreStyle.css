@@ -1,0 +1,93 @@
+
+section > div:nth-of-type(1) div{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+br{
+    clear: both;
+}
+section > div:nth-of-type(3){
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+section > div:nth-of-type(4) {
+    width: 70%;
+    margin: auto;
+}
+section > div:nth-of-type(4) img{
+    width: 100%;
+}
+section > div:nth-of-type(5) div,section > div:nth-of-type(7) div,section > div:nth-of-type(10) div{
+    width: 40%;
+    float: left;
+    text-align: left;
+    margin: 5%;
+    
+}
+section > div:nth-of-type(5) div img,section > div:nth-of-type(7) div img,section > div:nth-of-type(10) div img{
+    width: 100%;
+}
+section > div:nth-of-type(6), section > div:nth-of-type(11){
+    display: flex;
+    margin: 20px 100px;
+}
+section > div:nth-of-type(6) div{
+    flex-grow: 1;
+}
+section > div:nth-of-type(11) div{
+    flex-basis: 30%;
+    margin: 1.5%;
+    text-align: center;
+}
+
+section > div:nth-of-type(11) div img{
+    width: 100%;
+}
+.block7{
+    background-color: blue;
+    color: white;
+    padding:5%;
+    text-align: center;
+}
+
+.block7 p span{
+    margin:20px ;
+}
+#block11{
+width:70%;
+margin: auto;
+
+
+}
+#block11 > div{
+    width: 40%;
+    float: left;
+    margin: 5%;
+    text-align: left;
+   
+    line-height: 1.5;
+
+}
+#block11 > div img{
+    width: 100%;
+}
+#allLinks > div{
+    width:16% ;
+    float: left;
+}
+
+#allLinks li a{
+
+text-decoration: none;
+display: block;
+margin-bottom: 10px;
+
+}
+#allLinks li{
+list-style: none;
+}
+h1{
+    font-size: 30px;
+}
