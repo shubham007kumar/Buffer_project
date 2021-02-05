@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbarStyle.css">
+      
+</head>
+<body>
+    <nav>
+        <label><a href=""><img src="https://static.buffer.com/login/public/img/buffer-logo.svg" alt=""></a></label>
+        <ul>
+            <li>
+                <a href="">Tools</a>
+                <!-- <div>
+                    <div>
+                        <div>
+                            <h2>Publishing</h2>
+                            <p>Plan,Collaborate and Publish thumb stopping content</p>
+                        </div>
+                        <div>
+                            <h2>Publishing</h2>
+                            <p>Plan,Collaborate and Publish thumb stopping content</p>
+                        </div>
+                        <div>
+                            <h2>Publishing</h2>
+                            <p>Plan,Collaborate and Publish thumb stopping content</p>
+                        </div>
+
+                    </div>
+                   
+                </div> -->
+             
+            
+            </li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Resources</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Customers</a></li>
+            <li> <button><a href=""> Get started now</a></button></li>
+            <li><button><a href="">Log in</a></button></li>
+
+        </ul>
+        <div id="icon">
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </div>
+        <div >
+            <img id="cross" src="data:image/png;base64,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" alt="">
+        </div>
+    </nav>
+    <script>
+        var lists = document.querySelector('ul');
+        var icon = document.getElementById("icon");
+        var sign = document.getElementById("cross")
+
+       
+        function collapseNav(e){
+            lists.style.visibility = 'visible';
+            icon.style.visibility='hidden'
+            
+            sign.style.visibility = 'visible'
+            // e.target.removeEventListener('click',collapseNav)
+        //   lists.setAttribute('class','displayList')
+        }
+      
+       
+        icon.addEventListener('click',collapseNav);
+        sign.addEventListener('click',function(){
+            lists.style.visibility = 'hidden'
+            icon.style.visibility='visible'
+            
+            sign.style.visibility = 'hidden'
+        })
+      
+    </script>
+</body>
+</html>
