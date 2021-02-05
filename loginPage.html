@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css\nav.css">
     <style>
         #loginPage > div{
             float: left;
         }
         #loginPage > div:nth-of-type(1){
-            width: 30%;
+            width: 40%;
             padding: 5%;
         }
         #loginPage input{
@@ -20,7 +21,7 @@
         }
         #loginPage > div:nth-of-type(2){
             background-color: rgb(245, 242, 236);
-            width: 35%;
+            width: 50%;
             padding: 12.5%;
             padding-top: 3px;
             text-align: center;
@@ -40,6 +41,20 @@
     </style>
 </head>
 <body>
+    <header>
+        <nav>
+          <ul class="menu">
+            <li class="logo" ><a href="Html\first.html"><img src="https://buffer.com/resources/content/images/2021/02/buffer-logo.svg" style="width:120px;" /></a></li>
+            <li class="item"><a  href="Html\second.html">Pricing</a></li> 
+            <li class="item" ><a  href="about.html">About</a></li> 
+            <li  class="item"><a href="resources_page.html">Resources</a></li>
+             </li> 
+            <li  class="item button"><a href="loginPage.html">Login</a></li> 
+            <li  class="item button secondary"><a href="loginPage.html">Sign up</a></li>
+            <li class="toggle"><span class="bars"></span></li> 
+       </ul>
+        </nav>
+    </header>
     <section id="loginPage">
         <div>
             <img src="https://static.buffer.com/login/public/img/buffer-logo.svg" alt="">
