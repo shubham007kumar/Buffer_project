@@ -180,7 +180,6 @@ main>#child3>p{
 }
 .container{
     display:flex;
-   
     width: 50%;
     margin: auto;
     justify-content: space-around;
@@ -199,6 +198,7 @@ main>#child3>p{
      .container{
         width: 30%; 
      }
+  
 #row1{
 flex-wrap: wrap;
 }
