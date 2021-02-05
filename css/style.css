@@ -217,18 +217,20 @@ main>#child4{
 }
 #child5{
     width:70%;
-    
+    cursor: pointer;
     margin: auto;
     display: grid;
     column-gap: 7%;
     grid-template:"a b";
 }
 #child5>#row1{
+    
   grid-area: a;
   height: 400px;
   background-color: violet;
 }
 #child5>#row2{
+  
     grid-area:b;
     height: 400px;
     background-color: yellow;
@@ -327,3 +329,45 @@ main{
 }
 
 
+#allLinks > div{
+    width:16% ;
+    float: left;
+}
+/* #allLinks a{
+    margin-bottom: 5px;
+
+} */
+#allLinks li p{
+
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+
+}
+#allLinks li{
+    list-style: none;
+}
+#block7{
+    background-color:rgb(44, 75, 255);
+    color: white;
+    padding:5%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+   #block7 p span{
+    margin:20px ;
+}
+button{
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.four{
+margin-bottom: 30px;
+}
+#blue{
+    background-color:rgb(44, 75, 255);
+    height: 500px;
+    margin-bottom: 50px;
+   }
