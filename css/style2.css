@@ -1,0 +1,117 @@
+h1{
+    font-size: 30px;
+}
+#block4{
+    background-color: rgb(250, 248, 243);
+    width: 100%;
+}
+section > #alignCenter{
+    margin: auto;
+    width:60%;
+    text-align: center;
+}
+#block4 img{
+    width: 100%;
+}
+section > #cont{
+    width: 90%;
+    margin: auto;
+}
+#cont > div{
+    width:17%;
+    margin: 3%;
+    float: left;
+    text-align: center;
+
+}
+#cont > div >  h1{
+    font-size: 30px;
+    color: blue;
+}
+.alignMiddle{
+    margin: auto;
+    width:60%;
+    text-align: center;
+}
+#block6 > img{
+    width: 150px;
+    margin-bottom: 20px;
+}
+br{
+    clear: both;
+}
+#block7{
+    background-color: blue;
+    color: white;
+    padding:5%;
+    text-align: center;
+}
+/* #block7 h1{
+    width: 90%;
+    margin: auto;
+} */
+#block7 p span{
+    margin:20px ;
+}
+button{
+    padding: 5px;
+}
+
+
+#block10 > div{
+    width: 90%;
+    margin: auto;
+}
+.row > div{
+    float: left;
+    width: 40%;
+    margin: 5%;
+}
+.row > div img{
+    width: 100%;
+   
+}
+
+#blue{
+background-color: blue;
+margin-top: 20px;
+}
+#block11{
+width:70%;
+margin: auto;
+
+
+}
+#block11 > div{
+    width: 40%;
+    float: left;
+    margin: 5%;
+    text-align: center;
+    color: white;
+    line-height: 1.5;
+
+}
+#block11 > div img{
+    width: 100%;
+}
+
+#allLinks  div{
+    width:15% ;
+    float: left;
+   
+}
+/* #allLinks a{
+    margin-bottom: 5px;
+
+} */
+
+#allLinks li a{
+
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+
+}
+#allLinks li{
+    list-style: none;
+}
