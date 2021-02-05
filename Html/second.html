@@ -29,8 +29,8 @@
               <p>Your full stack of brand building tools</p>
           </div>
           <div class="second">
-            <input type="button" value="Started" id="btn1" style="font-size: 20px;">
-            <input type="button" value="Started" id="btn2"  style="font-size: 20px;">
+            <input type="button" value="Started" id="btn1" onclick="funbtn1()"  style="font-size: 20px;">
+            <input type="button" value="Started" id="btn2"   style="font-size: 20px;">
           </div>
         
        
@@ -395,9 +395,27 @@
                     </div>
              
                 </div>
-    
-   
-
     </main>
+    <script>
+         var a;
+      function funbtn1(){
+    if(a==1){
+       document.getElementById('box2').style.display="inline"
+       document.getElementById('box1').style.display="inline"
+       document.getElementById('box3').style.display="inline"
+       document.getElementById('box4').style.display="inline"
+  
+       return a=0;
+     }
+     else{
+      document.getElementById('box2').style.display="none";
+      document.getElementById('box1').style.display="none";
+      document.getElementById('box3').style.display="none";
+      document.getElementById('box4').style.display="none";
+       return a=1;
+     }
+   
+      }
+    </script>
       </body>
 </html>
