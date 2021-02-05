@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+        <style type = "text/css">
+        body {
+            font-family: 'Signika', sans-serif;
+        }
+        #topLayout {
+            max-width: 1220px;
+            /* border: 1px solid blue; */
+            margin: auto;
+            padding-top: 100px;
+            padding-bottom: 50px;
+            display: grid;
+            gap: 40px;
+            grid-template: "tbox1"
+                            "tbox2";
+            /* display: inline-block; */
+        }
+        #topLayout > div {
+            width: 38vw;
+            /* border: 1px solid green; */
+        }
+        #lowLayout {
+            max-width: 1220px;
+            /* border: 1px solid red; */
+            margin: auto;
+            padding-top: 80px;
+            padding-bottom: 100px;
+        }
+        .lowLayoutBox {
+            display: grid;
+            gap: 25px;
+            padding-top: 20px;
+            grid-template: "lbox1"
+                            "lbox2"
+                            "lbox3"
+                            "lbox4"
+                            "lbox5"
+                            "lbox6";
+        }
+        .lowLayoutBox > div {
+            width: 25vw;
+            /* border: 1px solid black; */
+        }
+        .font > h1{
+            font-size: 40px;
+        }
+        .font > h5 > a {
+            text-decoration: none;
+        }
+        .paddingTop {
+            padding-top: 100px;
+        }
+        .display > div {
+            display: inline-block;
+        }
+        .line {
+            line-height: 0%;
+            padding-left: 10px;
+            /* padding-bottom: 10px; */
+        }
+        .lineHeight {
+            line-height: 40%;
+        }
+        .margin > div{
+            margin-right: 30px;
+        }
+        .color > div {
+            color: grey;
+        }
+        .lineup > h4 {
+            padding-bottom: 20px;
+        }
+        .visibility {
+            visibility: hidden;
+        }
+        #midLayout {
+            max-width: 1220px;
+            /* border: 1px solid rgb(245, 245, 6); */
+            margin: auto;
+            padding-top: 10px;
+            padding-bottom: 50px;
+            display: grid;
+            gap: 25px;
+            grid-template: "mbox1"
+                            "mbox2"
+                            "mbox3"
+                            "mbox4";
+        }
+        /* #midLayout > div {
+            width: 25vw;
+            border: 1px solid black;
+        } */
+        #mbox1 {
+            width: 25vw;
+            /* border: 1px solid black; */
+            grid-area: mbox1;
+        }
+        #mbox2 {
+            width: 25vw;
+            /* border: 1px solid black; */
+            grid-area: mbox2;
+        }
+        #mbox3 {
+            width: 25vw;
+            /* border: 1px solid black; */
+            grid-area: mbox3;
+        }
+        #mbox4 {
+            width: 25vw;
+            /* border: 1px solid black; */
+            grid-area: mbox4;
+        }
+        #mbox5 {
+            width: 24vw;
+            /* border: 1px solid black; */
+            grid-area: mbox5;
+            border-left: 1px solid rgb(8, 8, 8);
+            padding-left: 20px;
+        }
+        .paddingBottom {
+            padding-bottom: 40px;
+        }
+        #subscibeLayout {
+            max-width: 1220px;
+            /* border: 1px solid blue; */
+            margin: auto;
+            padding-top: 100px;
+            padding-bottom: 80px;
+            display: grid;
+            gap: 15vw;
+            grid-template: "sbox2";
+        }
+        /* #subscibeLayout > div {
+            width: 30vw;
+            border: 1px solid green;
+        } */
+        #sbox1 {
+            width: 27vw;
+            /* border: 1px solid green; */
+            grid-area: sbox1;
+        }
+        #sbox2 {
+            width: 37vw;
+            /* border: 1px solid green; */
+            grid-area: sbox2;
+            text-align: center;
+        }
+        #sbox2 input {
+            /* width: 220px; */
+            /* background-color: rgb(47, 0, 255); */
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            /* height: 40px; */
+            border-radius: 5px;
+        }
+        .button {
+            background-color: rgb(47, 0, 255);
+        }
+        #blackPart {
+            background-color: black;
+            color: white;
+            padding-top: 50px;
+            padding-bottom: 100px;
+        }
+        .blackBorder > div {
+            max-width: 1220px;
+            /* border: 3px solid white; */
+            margin: auto;
+            margin-bottom: 30px;
+            /* padding-top: 50px; */
+            /* padding-bottom: 100px; */
+        }
+        #blackPartLayout {
+            max-width: 1220px;
+            /* border: 1px solid rgb(208, 255, 0); */
+            display: grid;
+            gap: 30px;
+            grid-template: "bbox1"
+                            "bbox2"
+                            "bbox3";
+        }
+        #bbox1 {
+            width: 35vw;
+            /* border: 1px solid green; */
+            grid-area: bbox1;
+            border-right: 1px solid white;
+            padding-right: 30px;
+        }
+        #bbox2 {
+            width: 40vw;
+            /* border: 1px solid green; */
+            grid-area: bbox2;
+        }
+        #bbox3 {
+            width: 40vw;
+            /* border: 1px solid green; */
+            grid-area: bbox3;
+        }
+        .decorate > a {
+            text-decoration: none;
+        }
+        .marginMore {
+            margin-left: 4vw;
+            margin-right: 15vw;
+        }
+        .fontNav {
+            font-size: 20px;
+        }
+        .fontColor {
+            color: white;
+        }
+        .marginLeft {
+            margin-left: 15vw; 
+        }
+        .paddings {
+            padding: 10px;
+        }
+        @media (min-width: 600px) {
+            #topLayout {
+                grid-template: "tbox1 tbox2";
+                /* grid-template: "tbox1"
+                            "tbox2"; */
+            }
+            #midLayout {
+                grid-template: "mbox1 mbox5"
+                            "mbox2 mbox5"
+                            "mbox3 mbox4";
+            }
+            #subscibeLayout {
+                grid-template: "sbox1 sbox2";
+                /* grid-template: "sbox1"
+                            "sbox2"; */
+            }
+            #blackPartLayout {
+                grid-template: "bbox1 bbox2"
+                            "bbox1 bbox3";
+                /* grid-template: "bbox1"
+                            "bbox2"
+                            "bbox3"; */
+            }
+            .lowLayoutBox {
+                grid-template: "lbox1 lbox2"
+                            "lbox3 lbox4"
+                            "lbox5 lbox6";
+                /* grid-template: "lbox1"
+                            "lbox2"
+                            "lbox3"
+                            "lbox4"
+                            "lbox5"
+                            "lbox6"; */
+            }
+        }
+        @media (min-width: 768px) {
+            #topLayout {
+                grid-template: "tbox1 tbox2";
+            }
+            #midLayout {
+                grid-template: "mbox1 mbox2 mbox5"
+                            "mbox3 mbox4 mbox5";
+                /* grid-template: "mbox1 mbox2"
+                            "mbox3 mbox4"; */
+            }
+            #subscibeLayout {
+                grid-template: "sbox1 sbox2";
+                /* grid-template: "sbox2"; */
+            }
+            #blackPartLayout {
+                grid-template: "bbox1 bbox2"
+                            "bbox1 bbox3";
+                /* grid-template: "bbox1"
+                            "bbox2"
+                            "bbox3"; */
+            }
+            .lowLayoutBox {
+                grid-template: "lbox1 lbox2"
+                            "lbox3 lbox4"
+                            "lbox5 lbox6";
+            }
+        }
+        @media (min-width: 992px) {
+            #topLayout {
+                grid-template: "tbox1 tbox2";
+            }
+            #midLayout {
+                grid-template: "mbox1 mbox2 mbox5"
+                            "mbox3 mbox4 mbox5";
+            }
+            #subscibeLayout {
+                grid-template: "sbox1 sbox2";
+            }
+            #blackPartLayout {
+                grid-template: "bbox1 bbox2"
+                            "bbox1 bbox3";
+            }
+            .lowLayoutBox {
+                grid-template: "lbox1 lbox2 lbox3"
+                            "lbox4 lbox5 lbox6";
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div>
+                <div class="display margin color ">
+                    <!-- <img src="https://buffer.com/resources/content/images/2021/02/buffer-logo.svg" /> -->
+                    <!-- <div>
+                        <img src="https://buffer.com/resources/content/images/2021/02/buffer-logo.svg" width="120px"/>
+                    </div> -->
+                    <div><p><a class="marginMore" href=""><img src="https://buffer.com/resources/content/images/2021/02/buffer-logo.svg" width="120px" /></a></p></div>
+                    <div><p class="decorate fontNav"><a href="">Guides</a></p></div>
+                    <div><p class="decorate fontNav"><a href="">Trends</a></p></div>
+                    <div><p class="decorate fontNav"><a href="">News</a></p></div>
+                    <div><p class="decorate fontNav"><a href="">Work Culture</a></p></div>
+                    <div><p class="decorate fontNav"><a href="">All Categories</a></p></div>
+                    <div>
+                        <form>
+                            <input class="button fontNav fontColor marginLeft paddings" type="submit" value="Start a free trial" />
+                        </form>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div id="topLayout">
+            <div class="paddingTop">
+                <img src="https://buffer.com/resources/content/images/size/w600/2021/01/1200x628_Blog_post.png" width="100%"/>
+            </div>
+            <div class="font">
+                <h5> <a href="">Publications</a></h5>
+                <h1>Introducing a Better Way to Engage With Your Instagram Audience</h1>
+                <p>After working and testing with thousands of customers, we have developed a solution that is truly focused on enabling you to build better relationships and a stronger brand on Instagram.</p>
+                <div class="display margin color">
+                    <div><p>Jan 26, 2021</p></div>
+                    <div><p>6 min read</p></div>
+                    <div><p>Buffer News</p></div>
+                </div>
+                <div class="display"> 
+                    <div>
+                    <img src="https://www.flaticon.com/svg/vstatic/svg/1384/1384015.svg?token=exp=1612440502~hmac=67e447ef2740ad1593e177fc3dd1b81c" width="60px" />
+                    </div>
+                    <div>
+                        <h4 class="line">Mike Eckstein </h4>       
+                        <p class="line">Product Marketing Manager @ Buffer</p>
+                        <p class="line visibility">Product Marketing Manager @ Buffer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div id="midLayout">
+            <div id="mbox1">
+                <img src="https://buffer.com/resources/content/images/size/w600/2020/12/Frame-22.png" width="100%" height="200px"/>
+                <h4>IFundWomen's Guide to Cultivating an Inclusive and Engaged Digital Community</h4>
+                <div class="display margin color">
+                    <div><p>Jan 26, 2021</p></div>
+                    <div><p>6 min read</p></div>
+                    <div><p>Social Media</p></div>
+                </div>
+                <p>In this post we give you a behind the scenes look at how IFundWomen the go to funding marketplace for women owned businesses integrates their</p>
+                <div class="display"> 
+                    <div>
+                    <img src="https://www.flaticon.com/svg/vstatic/svg/1384/1384015.svg?token=exp=1612440502~hmac=67e447ef2740ad1593e177fc3dd1b81c" width="50px" />
+                    </div>
+                    <div>
+                        <h4 class="line">Sophie Gil</h4>       
+                        <p class="line visibility">Product Marketing Manager @ Buffer</p>
+                    </div>
+                </div>
+            </div>
+            <div id="mbox2">
+                <img src="https://buffer.com/resources/content/images/size/w600/2020/11/DJI_0014-1.jpg" width="100%" height="200px"/>
+                <h4>Reflecting on 10 years of building Buffer</h4>
+                <div class="display margin color">
+                    <div><p>Jan 26, 2021</p></div>
+                    <div><p>6 min read</p></div>
+                    <div><p>Social Media</p></div>
+                </div>
+                <p>Today marks ten years since I launched the first version of Buffer. In this post, we give you a behind-the-scenes look at how HIKI, a newly launched DTC genderless full body sweat brand.</p>
+                <div class="display"> 
+                    <div>
+                    <img src="https://www.flaticon.com/svg/vstatic/svg/1384/1384015.svg?token=exp=1612440502~hmac=67e447ef2740ad1593e177fc3dd1b81c" width="50px" />
+                    </div>
+                    <div>
+                        <h4 class="line">Joel Gascoigne </h4>       
+                        <p class="line visibility">Product Marketing Manager @ Buffer</p>
+                    </div>
+                </div>
+            </div>
+            <div id="mbox3">
+                <img src="https://buffer.com/resources/content/images/size/w600/2020/11/1200x628_Blog_post.png" width="100%" height="200px"/>
+                <h4>More Data, Better Results: Introducing LinkedIn Analytics and More</h4>
+                <div class="display margin color">
+                    <div><p>Jan 26, 2021</p></div>
+                    <div><p>6 min read</p></div>
+                    <div><p>Social Media</p></div>
+                </div>
+                <p>You can now analyze and report your results on LinkedIn, on top of Facebook, Instagram, and Twitter. This makes Buffer's analytics an all-in-one solution for these four popular social networks for businesses.</p>
+                <div class="display"> 
+                    <div>
+                    <img src="https://www.flaticon.com/svg/vstatic/svg/1384/1384015.svg?token=exp=1612440502~hmac=67e447ef2740ad1593e177fc3dd1b81c" width="50px" />
+                    </div>
+                    <div>
+                        <h4 class="line">Alfred Lua</h4>       
+                        <p class="line visibility">Product Marketing Manager @ Buffer</p>
+                    </div>
+                </div>
+            </div>
+            <div id="mbox4">
+                <img src="https://buffer.com/resources/content/images/size/w600/2020/09/HIKI.png" width="100%" height="200px"/>
+                <h4>How HIKI Shifted Their Social Media Marketing Launch Straategy During COVID-19</h4>
+                <div class="display margin color">
+                    <div><p>Jan 26, 2021</p></div>
+                    <div><p>6 min read</p></div>
+                    <div><p>Social Media</p></div>
+                </div>
+                <p>In this post, we give you a behind-the-scenes look at how HIKI shifted their social media marketing strategy for a COVID-19 era and how they leaned on their community to co-create their products.</p>
+                <div class="display"> 
+                    <div>
+                    <img src="https://www.flaticon.com/svg/vstatic/svg/1384/1384015.svg?token=exp=1612440502~hmac=67e447ef2740ad1593e177fc3dd1b81c" width="50px" />
+                    </div>
+                    <div>
+                        <h4 class="line">Sophie Gil</h4>       
+                        <p class="line visibility">Product Marketing Manager @ Buffer</p>
+                    </div>
+                </div>
+            </div>
+            <div id="mbox5">
+                <h3>Publications</h3>
+                <div class="paddingBottom">
+                    <img src="https://buffer.com/resources/assets/img/flow.svg?v=9a49a150d2" width="40%" />
+                    <p>Real-life marketing stories, trends, and strategies from social media’s most engaging brands</p>
+                </div>
+                <div class="paddingBottom">
+                    <img src="https://buffer.com/resources/assets/img/open.svg?v=9a49a150d2" width="40%" />
+                    <p>Workplace culture, behind-the-scenes. Lessons on remote work, transparency, and more.</p>
+                </div>
+                <div class="paddingBottom">
+                    <img src="https://buffer.com/resources/assets/img/overflow.svg?v=9a49a150d2" width="70%" />
+                    <p>How we ship code, delight customers, and build a team where engineers flourish.</p>
+                </div>
+
+                <hr/>
+
+                <h3>Podcasts</h3>
+                <div class="paddingBottom">
+                    <img src="https://buffer.com/resources/assets/img/breakingbrand.svg?v=9a49a150d2" width="65%" />
+                    <p>The inside story of an industry-changing agency reinventing its business.</p>
+                </div>
+                <div class="paddingBottom">
+                    <img src="https://buffer.com/resources/assets/img/social.svg?v=9a49a150d2" width="50%" />
+                    <p>Timely social media questions, answered. Bite-sized episodes for busy marketers.</p>
+                </div>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div id="subscibeLayout">
+            <div id="sbox1">
+                <p>Be ready for the next big thing. Join 100,000+ marketers and brand-builders who receive regular emails from Buffer, filled to the brim with tips, strategies, news, and the latest workplace and social media ideas.</p>
+            </div>
+            <div id="sbox2">
+                <h1>Business-building trends and news to help you innovate and improve</h1>
+                <form>
+                    <input id="email" type="email" placeholder="Your email address..." />
+                    <input class="button" type="submit" value="Subscribe" />
+                </form>
+            </div>
+        </div>
+
+        <div id="blackPart">
+            <div class="blackBorder">
+                <div>
+                    <img src="https://buffer.com/resources/assets/img/bb-banner.jpg?v=9a49a150d2" width="100%"/>
+                </div>
+                <div id="blackPartLayout">
+                    <div id="bbox1">
+                        <p>Nov 26, 2019</p>
+                        <h2>Next Up</h2>
+                        <p>After launching its first brand to market, the team reflects on the journey and what’s next for Pattern.</p>
+                        <div>
+                        <img src="https://buffer.com/resources/content/images/size/w600/2020/04/5db0229b11163868e90e9f89_6_v2.jpg" width="100%" height="220px"/>
+                        </div>
+                    </div>
+                    <div id="bbox2">
+                        <p>UP NEXT</p>
+                        <div class="display"> 
+                            <div>
+                            <img src="https://buffer.com/resources/content/images/size/w600/2020/04/5daf01e702af9047dd7c6603_1_v2.jpg" width="220px"/>
+                            </div>
+                            <div>
+                                <p class="line lineHeight">Nov 19, 2019</p>
+                                <h2 class="line lineHeight">Equal Parts</h2>       
+                                <div class="line lineHeight">Inspiration doesn’t always come from obvious places.</div>
+                                <div class="line lineHeight"><p>Can 70's jazz music...</p></div>
+                                <p class="line visibility">Product Marketing Manager @ Buffer</p>
+                                <p class="line visibility">Product Marketing Manager @ Buffer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="bbox3">
+                        <div class="display"> 
+                            <div>
+                            <img src="https://buffer.com/resources/content/images/size/w600/2020/04/5db02288a0aa2b7906b7c63c_3_v2.jpg" width="220px"/>
+                            </div>
+                            <div>
+                                <p class="line lineHeight">Nov 12, 2019</p>
+                                <h2 class="line lineHeight">Enjoy Daily Life</h2>       
+                                <div class="line lineHeight">Slow down. Pause. Step Back. The road to launch is'nt</div>
+                                <div class="line lineHeight"><p>always straight.</p></div>
+                                <p class="line visibility">Product Marketing Manager @ Buffer</p>
+                                <p class="line visibility">Product Marketing Manager @ Buffer</p>
+                            </div>
+                            <div>
+                            <h4 class="decorate"><a href="">Browse all episodes</a></h4>
+                            </div>         
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="lowLayout">
+            <div>
+                <div class="display margin color ">
+                    <div><p class="fontNav"><a href="">Latest Updates</a></p></div>
+                    <div><p class="decorate fontNav"><a href="">Flow</a></p></div>
+                    <div><p class="decorate fontNav"><a href="">Open Blog</a></p></div>
+                    <div><p class="decorate fontNav"><a href="">Breaking Brand</a></p></div>
+                    <div><p class="decorate fontNav"><a href="">Science of Social Media</a></p></div>
+                    <div><p class="decorate fontNav"><a href="">Overflow</a></p></div>
+                </div>   
+            </div>
+            <hr/>
+            <div class="lowLayoutBox">
+                <div>
+                    <img src="https://buffer.com/resources/content/images/size/w600/2021/01/1200x628_Blog_post.png" width="100%" height="200px"/>
+                    <h4>Introducing a Better Way to Engage With Your Instagram Audience</h4>
+                    <div class="display margin color">
+                        <div><p>Jan 26, 2021</p></div>
+                        <div><p>6 min read</p></div>
+                        <div><p>Buffer News</p></div>
+                    </div>
+                    <p>After working and testing with thousands of customers we have developed a solution that is truly focused on enabling you to build better relationships and</p>
+                    <div class="display"> 
+                        <div>
+                        <img src="https://www.flaticon.com/svg/vstatic/svg/1384/1384015.svg?token=exp=1612440502~hmac=67e447ef2740ad1593e177fc3dd1b81c" width="50px" />
+                        </div>
+                        <div>
+                            <h4 class="line">Mike Eckstein </h4>       
+                            <p class="line visibility">Product Marketing Manager @ Buffer</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://buffer.com/resources/content/images/size/w600/2021/01/Frame-26.png" width="100%" height="200px"/>
+                    <h4>Selling on Social 101: How Blume Markets and Sells to a Gen Z Audience</h4>
+                    <div class="display margin color">
+                        <div><p>Jan 26, 2021</p></div>
+                        <div><p>7 min read</p></div>
+                        <div><p>Brand Marketing</p></div>
+                    </div>
+                    <p>After working and testing with thousands of customers we have developed a solution that is truly focused on enabling you to build better relationships and</p>
+                    <div class="display"> 
+                        <div>
+                        <img src="https://www.flaticon.com/svg/vstatic/svg/1384/1384015.svg?token=exp=1612440502~hmac=67e447ef2740ad1593e177fc3dd1b81c" width="50px" />
+                        </div>
+                        <div>
+                            <h4 class="line">Sophie Gil</h4>       
+                            <p class="line visibility">Product Marketing Manager @ Buffer</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://buffer.com/resources/content/images/size/w600/2021/01/Frame-46-copy.jpg" width="100%" height="200px"/>
+                    <h4>Crafting a Support Network as a Founder and CEO</h4>
+                    <div class="display margin color">
+                        <div><p>Jan 26, 2021</p></div>
+                        <div><p>5 min read</p></div>
+                        <div><p>SaaS strategy</p></div>
+                    </div>
+                    <p>This post was originally published on Joel is https joel is support network Sometime in late 2018 the concept of having a support network clicked. After working and testing with thousands of customers</p>
+                    <div class="display"> 
+                        <div>
+                        <img src="https://www.flaticon.com/svg/vstatic/svg/1384/1384015.svg?token=exp=1612440502~hmac=67e447ef2740ad1593e177fc3dd1b81c" width="50px" />
+                        </div>
+                        <div>
+                            <h4 class="line">Joel Gascoigne</h4>       
+                            <p class="line visibility">Product Marketing Manager @ Buffer</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://buffer.com/resources/content/images/size/w600/2021/01/matt-duncan-IUY_3DvM__w-unsplash.jpg" width="100%" height="200px"/>
+                    <h4>Welcoming Maria Thomas as Buffer’s Chief Product Officer</h4>
+                    <div class="display margin color">
+                        <div><p>Jan 26, 2021</p></div>
+                        <div><p>2 min read</p></div>
+                        <div><p>Open</p></div>
+                    </div>
+                    <p>After working and testing with thousands of customers we have developed a solution that is truly focused on enabling you to build better relationships and</p>
+                    <div class="display"> 
+                        <div>
+                        <img src="https://www.flaticon.com/svg/vstatic/svg/1384/1384015.svg?token=exp=1612440502~hmac=67e447ef2740ad1593e177fc3dd1b81c" width="50px" />
+                        </div>
+                        <div>
+                            <h4 class="line">Joel Gascoigne</h4>       
+                            <p class="line visibility">Product Marketing Manager @ Buffer</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://buffer.com/resources/content/images/size/w600/2020/12/Frame-33-1-.png" width="100%" height="200px"/>
+                    <h4>Shareholder Update: Q3 2020</h4>
+                    <div class="display margin color">
+                        <div><p>Jan 26, 2021</p></div>
+                        <div><p>3 min read</p></div>
+                        <div><p>Open</p></div>
+                    </div>
+                    <p>Note This is the quarterly update sent to Buffer shareholders with a bit of added information for context We share these updates transparently. After working and testing with thousands of customers</p>
+                    <div class="display"> 
+                        <div>
+                        <img src="https://www.flaticon.com/svg/vstatic/svg/1384/1384015.svg?token=exp=1612440502~hmac=67e447ef2740ad1593e177fc3dd1b81c" width="50px" />
+                        </div>
+                        <div>
+                            <h4 class="line">Caryn Hubbard</h4>       
+                            <p class="line visibility">Product Marketing Manager @ Buffer</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://buffer.com/resources/content/images/size/w600/2020/12/Frame-22.png" width="100%" height="200px"/>
+                    <h4>IFundWomen's Guide to Cultivating an Inclusive and Engaged Digital Community</h4>
+                    <div class="display margin color">
+                        <div><p>Jan 26, 2021</p></div>
+                        <div><p>6 min read</p></div>
+                        <div><p>Social Media</p></div>
+                    </div>
+                    <p>After working and testing with thousands of customers we have developed a solution that is truly focused on enabling you to build better relationships and</p>
+                    <div class="display"> 
+                        <div>
+                        <img src="https://www.flaticon.com/svg/vstatic/svg/1384/1384015.svg?token=exp=1612440502~hmac=67e447ef2740ad1593e177fc3dd1b81c" width="50px" />
+                        </div>
+                        <div>
+                            <h4 class="line">Sophie Gil</h4>       
+                            <p class="line visibility">Product Marketing Manager @ Buffer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>
