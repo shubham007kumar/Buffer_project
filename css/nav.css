@@ -3,6 +3,7 @@
     padding:0;
     margin:0;
 }
+
 header{
     margin-bottom: 30px;
 }
@@ -10,14 +11,14 @@ body{
    font-family: sans-serif;
 }
 nav{
-    background-color: #222;
+    background-color: rgb(255, 255, 255);
     padding:5px 20px;
 }
 ul{
     list-style-type: none;
 }
 a{
-    color: white;
+    color: rgb(5, 3, 3);
     text-decoration: none;
 }
 a:hover{
@@ -120,7 +121,7 @@ a:hover{
     .button a{
         text-decoration: none;
         padding: 7px 15px;
-        background-color: teal;
+        background-color: rgb(44, 75, 255);
         border: 1px solid #006d6d;
         border-radius: 50em;
     }
