@@ -13,13 +13,16 @@ body{
 nav{
     background-color: rgb(255, 255, 255);
     padding:5px 20px;
+ 
 }
 ul{
     list-style-type: none;
 }
 a{
-    color: rgb(5, 3, 3);
+    color: rgb(24, 15, 15);
+    font-family:'Times New Roman', Times, serif;
     text-decoration: none;
+    font-size: 1.3em;
 }
 a:hover{
     text-decoration: underline;
@@ -35,7 +38,7 @@ a:hover{
 .menu li a{
     display: block;
 }
-.logo a,.toggle a{
+.logo a{
     font-size: 20px;
 }
 .button .secondary{
@@ -121,9 +124,11 @@ a:hover{
     .button a{
         text-decoration: none;
         padding: 7px 15px;
-        background-color: rgb(44, 75, 255);
+        background-color: rgb(6, 7, 12);
         border: 1px solid #006d6d;
         border-radius: 50em;
+        color: wheat;
+        font-size: 20px;
     }
     .button .secondary a{
         background-color: transparent;
